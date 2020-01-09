@@ -35,10 +35,10 @@
                         <li class="nav-item">
                             <a class="nav-link" href="<%=laboratorio.Laboratorio.getRoot()%>">Inicio <span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item active">
+                        <li class="nav-item ">
                             <a class="nav-link" href="<%=laboratorio.Laboratorio.getRoot()%>lab1/pregunta1.jsp">Laboratorio 1</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item active">
                             <a class="nav-link" href="<%=laboratorio.Laboratorio.getRoot()%>lab2/pregunta1.jsp">Laboratorio 2</a>
                         </li>
                         <li class="nav-item">
@@ -50,53 +50,48 @@
         </nav>
         
         <!-- PAGE CONTENT -->
+        <!-- LAB2 NAV -->
         <ul class="nav nav-tabs nav-fill">
             <li class="nav-item">
-                <a class="nav-link" href="<%=laboratorio.Laboratorio.getRoot()%>lab1/pregunta1.jsp">Pregunta 1</a>
+                <a class="nav-link" href="<%=laboratorio.Laboratorio.getRoot()%>lab2/pregunta1.jsp">Pregunta 1</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" href="<%=laboratorio.Laboratorio.getRoot()%>lab1/pregunta2.jsp">Pregunta 2</a>
+                <a class="nav-link " href="<%=laboratorio.Laboratorio.getRoot()%>lab2/pregunta2.jsp">Pregunta 2</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="<%=laboratorio.Laboratorio.getRoot()%>lab1/pregunta3.jsp">Pregunta 3</a>
+                <a class="nav-link " href="<%=laboratorio.Laboratorio.getRoot()%>lab2/pregunta3.jsp">Pregunta 3</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="<%=laboratorio.Laboratorio.getRoot()%>lab2/pregunta4.jsp">Pregunta 4</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="<%=laboratorio.Laboratorio.getRoot()%>lab1/pregunta4.jsp">Pregunta 4</a>
+                <a class="nav-link active" href="<%=laboratorio.Laboratorio.getRoot()%>lab2/pregunta5.jsp">Pregunta 5</a>
             </li>
         </ul>
-        
             
         <!-- PREGUNTA -->
-        <form style="margin-top: 30px" class="text-center border border-light p-5" action="pregunta2.jsp" method="get">
-            <p class="h4 mb-4">PRUEBA</p>
-            <select name="P1" class="custom-select" multiple>
-                <option disabled selected>PREGUNTA 1</option>
-                <option value="1">Respuesta 1</option>
-                <option value="2">Respuesta 2</option>
-                <option value="3">Respuesta 3</option>
-            </select>
-            <select name="P2" class="custom-select" multiple>
-                <option disabled selected>PREGUNTA 2</option>
-                <option value="1">Respuesta 1</option>
-                <option value="2">Respuesta 2</option>
-                <option value="3">Respuesta 3</option>
-            </select>
-            <select name="P3" class="custom-select" multiple>
-                <option disabled selected>PREGUNTA 3</option>
-                <option value="1">Respuesta 1</option>
-                <option value="2">Respuesta 2</option>
-                <option value="3">Respuesta 3</option>
-            </select>
-            
+        <form style="margin-top: 30px" class="text-center border border-light p-5" action="pregunta5.jsp" method="POST">
+            <p class="h4 mb-4">Ecriptar</p>
+            <input type="text" class="form-control mb-4" name="c1" placeholder="Número 1">
+            <input type="text" class="form-control mb-4" name="c2" placeholder="Número 2">
+            <input type="text" class="form-control mb-4" name="c3" placeholder="Número 3">
+            <input type="text" class="form-control mb-4" name="c4" placeholder="Número 4">
+            <input type="text" class="form-control mb-4" name="c5" placeholder="Número 5">
             <button class="btn btn-info btn-block my-4" type="submit">Enviar</button>
             <%=
-                laboratorio.lab1.pregunta2(
-                        request.getParameter("P1"),
-                        request.getParameter("P2"),
-                        request.getParameter("P3")
+                laboratorio.lab2.pregunta5 (
+                        request.getParameter("c1"),
+                        request.getParameter("c2"),
+                        request.getParameter("c3"),
+                        request.getParameter("c4"),                     
+                        request.getParameter("c5")                        
                 )
             %>
         </form>
+        
+
+
+
       
         <!-- JQuery -->
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

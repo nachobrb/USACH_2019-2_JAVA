@@ -36,13 +36,13 @@
                             <a class="nav-link" href="<%=laboratorio.Laboratorio.getRoot()%>">Inicio <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="<%=laboratorio.Laboratorio.getRoot()%>lab1/index.jsp">Laboratorio 1</a>
+                            <a class="nav-link" href="<%=laboratorio.Laboratorio.getRoot()%>lab1/pregunta1.jsp">Laboratorio 1</a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="<%=laboratorio.Laboratorio.getRoot()%>lab2/index.jsp">Laboratorio 2</a>
+                            <a class="nav-link" href="<%=laboratorio.Laboratorio.getRoot()%>lab2/pregunta1.jsp">Laboratorio 2</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<%=laboratorio.Laboratorio.getRoot()%>lab3/index.jsp">Laboratorio 3</a>
+                            <a class="nav-link" href="<%=laboratorio.Laboratorio.getRoot()%>lab3/pregunta1.jsp">Laboratorio 3</a>
                         </li>
                     </ul>
                 </div>

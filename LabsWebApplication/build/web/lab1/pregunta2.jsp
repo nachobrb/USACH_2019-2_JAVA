@@ -67,7 +67,7 @@
         
             
         <!-- PREGUNTA -->
-        <form style="margin-top: 30px" class="text-center border border-light p-5" action="pregunta2.jsp" method="POST">
+        <form style="margin-top: 30px" class="text-center border border-light p-5" action="pregunta2.jsp" method="get">
             <p class="h4 mb-4">PRUEBA</p>
             <select name="P1" class="custom-select" multiple>
                 <option disabled selected>PREGUNTA 1</option>

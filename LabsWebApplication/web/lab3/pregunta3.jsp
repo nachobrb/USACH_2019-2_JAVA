@@ -35,13 +35,13 @@
                         <li class="nav-item">
                             <a class="nav-link" href="<%=laboratorio.Laboratorio.getRoot()%>">Inicio <span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item active">
+                        <li class="nav-item ">
                             <a class="nav-link" href="<%=laboratorio.Laboratorio.getRoot()%>lab1/pregunta1.jsp">Laboratorio 1</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item ">
                             <a class="nav-link" href="<%=laboratorio.Laboratorio.getRoot()%>lab2/pregunta1.jsp">Laboratorio 2</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item active">
                             <a class="nav-link" href="<%=laboratorio.Laboratorio.getRoot()%>lab3/pregunta1.jsp">Laboratorio 3</a>
                         </li>
                     </ul>
@@ -50,53 +50,31 @@
         </nav>
         
         <!-- PAGE CONTENT -->
+        <!-- LAB2 NAV -->
         <ul class="nav nav-tabs nav-fill">
             <li class="nav-item">
-                <a class="nav-link" href="<%=laboratorio.Laboratorio.getRoot()%>lab1/pregunta1.jsp">Pregunta 1</a>
+                <a class="nav-link " href="<%=laboratorio.Laboratorio.getRoot()%>lab3/pregunta1.jsp">Pregunta 1</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" href="<%=laboratorio.Laboratorio.getRoot()%>lab1/pregunta2.jsp">Pregunta 2</a>
+                <a class="nav-link " href="<%=laboratorio.Laboratorio.getRoot()%>lab3/pregunta2.jsp">Pregunta 2</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="<%=laboratorio.Laboratorio.getRoot()%>lab1/pregunta3.jsp">Pregunta 3</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="<%=laboratorio.Laboratorio.getRoot()%>lab1/pregunta4.jsp">Pregunta 4</a>
+                <a class="nav-link active" href="<%=laboratorio.Laboratorio.getRoot()%>lab3/pregunta3.jsp">Pregunta 3</a>
             </li>
         </ul>
-        
             
         <!-- PREGUNTA -->
-        <form style="margin-top: 30px" class="text-center border border-light p-5" action="pregunta2.jsp" method="get">
-            <p class="h4 mb-4">PRUEBA</p>
-            <select name="P1" class="custom-select" multiple>
-                <option disabled selected>PREGUNTA 1</option>
-                <option value="1">Respuesta 1</option>
-                <option value="2">Respuesta 2</option>
-                <option value="3">Respuesta 3</option>
-            </select>
-            <select name="P2" class="custom-select" multiple>
-                <option disabled selected>PREGUNTA 2</option>
-                <option value="1">Respuesta 1</option>
-                <option value="2">Respuesta 2</option>
-                <option value="3">Respuesta 3</option>
-            </select>
-            <select name="P3" class="custom-select" multiple>
-                <option disabled selected>PREGUNTA 3</option>
-                <option value="1">Respuesta 1</option>
-                <option value="2">Respuesta 2</option>
-                <option value="3">Respuesta 3</option>
-            </select>
-            
-            <button class="btn btn-info btn-block my-4" type="submit">Enviar</button>
+        <form style="margin-top: 30px" class="text-center border border-light p-5" action="pregunta1.jsp" method="POST">
+            <p class="h4 mb-4">PDF: ORDENAR NÚMEROS</p>
+            <button name="btn" class="btn btn-info btn-block my-4" type="submit">Generar</button>
             <%=
-                laboratorio.lab1.pregunta2(
-                        request.getParameter("P1"),
-                        request.getParameter("P2"),
-                        request.getParameter("P3")
-                )
+                laboratorio.lab3.pregunta1(request.getParameter("btn"))
             %>
         </form>
+        
+
+
+
       
         <!-- JQuery -->
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

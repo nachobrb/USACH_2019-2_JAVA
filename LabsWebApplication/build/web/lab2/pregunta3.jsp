@@ -70,7 +70,7 @@
         </ul>
             
         <!-- PREGUNTA -->
-        <form style="margin-top: 30px" class="text-center border border-light p-5" action="pregunta3.jsp" method="POST">
+        <form style="margin-top: 30px" class="text-center border border-light p-5" action="pregunta3.jsp" method="get">
             <p class="h4 mb-4">MÁS DÍGITOS IGUALES</p>
             <input type="text" class="form-control mb-4" name="c1" placeholder="Número 1">
             <input type="text" class="form-control mb-4" name="c2" placeholder="Número 2">
