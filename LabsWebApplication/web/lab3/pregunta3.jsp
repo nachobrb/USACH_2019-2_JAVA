@@ -64,11 +64,31 @@
         </ul>
             
         <!-- PREGUNTA -->
-        <form style="margin-top: 30px" class="text-center border border-light p-5" action="pregunta1.jsp" method="POST">
+        <form style="margin-top: 30px" class="text-center border border-light p-5" action="pregunta3.jsp" method="POST">
             <p class="h4 mb-4">PDF: ORDENAR NÚMEROS</p>
+            <input type="text" class="form-control mb-4" name="n1" placeholder="Número 1">
+            <input type="text" class="form-control mb-4" name="n2" placeholder="Número 2">
+            <input type="text" class="form-control mb-4" name="n3" placeholder="Número 3">
+            <input type="text" class="form-control mb-4" name="n4" placeholder="Número 4">
+            <input type="text" class="form-control mb-4" name="n5" placeholder="Número 5">
+            <input type="text" class="form-control mb-4" name="n6" placeholder="Número 6">
+            <input type="text" class="form-control mb-4" name="n7" placeholder="Número 7">
+            <input type="text" class="form-control mb-4" name="n8" placeholder="Número 8">
+            <input type="text" class="form-control mb-4" name="n9" placeholder="Número 9">
             <button name="btn" class="btn btn-info btn-block my-4" type="submit">Generar</button>
             <%=
-                laboratorio.lab3.pregunta1(request.getParameter("btn"))
+                laboratorio.lab3.pregunta3(
+                        request.getParameter("btn"), 
+                        request.getParameter("n1"), 
+                        request.getParameter("n2"), 
+                        request.getParameter("n3"), 
+                        request.getParameter("n4"), 
+                        request.getParameter("n5"), 
+                        request.getParameter("n6"), 
+                        request.getParameter("n7"), 
+                        request.getParameter("n8"),
+                        request.getParameter("n9")
+                )
             %>
         </form>
         
