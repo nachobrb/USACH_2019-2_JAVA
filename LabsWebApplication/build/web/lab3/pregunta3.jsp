@@ -38,10 +38,10 @@
                         <li class="nav-item ">
                             <a class="nav-link" href="<%=laboratorio.Laboratorio.getRoot()%>lab1/pregunta1.jsp">Laboratorio 1</a>
                         </li>
-                        <li class="nav-item active">
+                        <li class="nav-item ">
                             <a class="nav-link" href="<%=laboratorio.Laboratorio.getRoot()%>lab2/pregunta1.jsp">Laboratorio 2</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item active">
                             <a class="nav-link" href="<%=laboratorio.Laboratorio.getRoot()%>lab3/pregunta1.jsp">Laboratorio 3</a>
                         </li>
                     </ul>
@@ -53,37 +53,22 @@
         <!-- LAB2 NAV -->
         <ul class="nav nav-tabs nav-fill">
             <li class="nav-item">
-                <a class="nav-link" href="<%=laboratorio.Laboratorio.getRoot()%>lab2/pregunta1.jsp">Pregunta 1</a>
+                <a class="nav-link " href="<%=laboratorio.Laboratorio.getRoot()%>lab3/pregunta1.jsp">Pregunta 1</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link " href="<%=laboratorio.Laboratorio.getRoot()%>lab2/pregunta2.jsp">Pregunta 2</a>
+                <a class="nav-link " href="<%=laboratorio.Laboratorio.getRoot()%>lab3/pregunta2.jsp">Pregunta 2</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link " href="<%=laboratorio.Laboratorio.getRoot()%>lab2/pregunta3.jsp">Pregunta 3</a>
-            </li>
-            <li class="nav-item ">
-                <a class="nav-link active" href="<%=laboratorio.Laboratorio.getRoot()%>lab2/pregunta4.jsp">Pregunta 4</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="<%=laboratorio.Laboratorio.getRoot()%>lab2/pregunta5.jsp">Pregunta 5</a>
+                <a class="nav-link active" href="<%=laboratorio.Laboratorio.getRoot()%>lab3/pregunta3.jsp">Pregunta 3</a>
             </li>
         </ul>
             
         <!-- PREGUNTA -->
-        <form style="margin-top: 30px" class="text-center border border-light p-5" action="pregunta4.jsp" method="POST">
-            <p class="h4 mb-4">MAYOR CANTIDAD PARES</p>
-            <input type="text" class="form-control mb-4" name="c1" placeholder="Número 1">
-            <input type="text" class="form-control mb-4" name="c2" placeholder="Número 2">
-            <input type="text" class="form-control mb-4" name="c3" placeholder="Número 3">
-            <input type="text" class="form-control mb-4" name="c4" placeholder="Número 4">
-            <button class="btn btn-info btn-block my-4" type="submit">Enviar</button>
+        <form style="margin-top: 30px" class="text-center border border-light p-5" action="pregunta1.jsp" method="POST">
+            <p class="h4 mb-4">PDF: ORDENAR NÚMEROS</p>
+            <button name="btn" class="btn btn-info btn-block my-4" type="submit">Generar</button>
             <%=
-                laboratorio.lab2.pregunta4(
-                        request.getParameter("c1"),
-                        request.getParameter("c2"),
-                        request.getParameter("c3"),
-                        request.getParameter("c4")                        
-                )
+                laboratorio.lab3.pregunta1(request.getParameter("btn"))
             %>
         </form>
         

@@ -19,7 +19,7 @@ public class lab1 {
         else {
             String newData = data;
             for(int i = 0;i < 29;i++) {
-                newData = newData + data + " "; 
+                newData = newData + " " + data ; 
             }
             return (
                 "<div class=\"container\">" +
@@ -35,6 +35,9 @@ public class lab1 {
     }
     
     public static String pregunta2(String P1, String P2, String P3) {
+        if(P1 == null && P2 == null && P3 == null) {
+            return "";
+        }
         // RESPUESTAS
         int p1 = 1;
         int p2 = 2;

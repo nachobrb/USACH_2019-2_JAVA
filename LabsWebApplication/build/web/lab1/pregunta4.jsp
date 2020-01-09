@@ -66,7 +66,7 @@
         </ul>
             
         <!-- PREGUNTA -->
-        <form style="margin-top: 30px" class="text-center border border-light p-5" action="pregunta4.jsp" method="get">
+        <form style="margin-top: 30px" class="text-center border border-light p-5" action="pregunta4.jsp" method="POST">
             <p class="h4 mb-4">CÁLCULO EXPONENTE</p>
             <input type="text" class="form-control mb-4" name="n1" placeholder="Base">
             <input type="text" class="form-control mb-4" name="n2" placeholder="Exponente">

@@ -1,0 +1,18 @@
+1.- enviar un nombre y escribirlo 30 veces
+
+2.- simular una prueba de 3 preguntas con 3 alternativas c/u.
+	si 1 buena nota 3
+	si 2 buena nota 4.5
+	si 3 buena nota 7
+	si 0 buenas nota 0
+
+	pregunta: .............
+		alt1 _________ 1
+		alt2 _________ 1
+		alt3 _________ 1
+
+
+3.- leer 3 numeros y escribir el mayor 
+	(se usan los parseos)
+
+4.- leer dos numeros enteros uno es la base y el otro es el exponente, escribir resultado

@@ -104,6 +104,9 @@ public class lab2 {
     }
     
     public static String pregunta2(String c1, String c2, String c3, String c4, String c5){
+        if(c1 == null&&c2 == null&&c3 == null&&c4 == null&&c5 == null){
+            return "";
+        }
         if(c1 == null) {
             c1 = "";
         }
@@ -136,6 +139,9 @@ public class lab2 {
 
 
     public static String pregunta3(String c1, String c2, String c3){
+        if(c1 == null&&c2 == null&&c3 == null){
+            return "";
+        }
         if(c1 == null) {
             c1 = "";
         }
@@ -159,6 +165,9 @@ public class lab2 {
     }
 
     public static String pregunta4(String c1, String c2, String c3, String c4){
+        if(c1 == null&&c2 == null&&c3 == null&&c4 == null){
+            return "";
+        }
         if(c1 == null) {
             c1 = "";
         }
@@ -246,6 +255,9 @@ public class lab2 {
 
 
     public static String pregunta5(String c1, String c2, String c3, String c4, String c5){
+        if(c1 == null&&c2 == null&&c3 == null&&c4 == null&&c5 == null){
+            return "";
+        }
         String str = new String();
 
         if(c1 == null) {

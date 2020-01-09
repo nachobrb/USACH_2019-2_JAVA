@@ -70,7 +70,7 @@
         </ul>
             
         <!-- PREGUNTA -->
-        <form style="margin-top: 30px" class="text-center border border-light p-5" action="pregunta1.jsp" method="get">
+        <form style="margin-top: 30px" class="text-center border border-light p-5" action="pregunta1.jsp" method="POST">
             <p class="h4 mb-4">MATRÍZ MULTIPLICACIÓN 1-10</p>
             <button name="btn" class="btn btn-info btn-block my-4" type="submit">Calcular</button>
             <%=

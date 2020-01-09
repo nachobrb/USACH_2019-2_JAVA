@@ -67,7 +67,7 @@
         </ul>
             
         <!-- PREGUNTA -->
-        <form style="margin-top: 30px" class="text-center border border-light p-5" action="pregunta1.jsp" method="get">
+        <form style="margin-top: 30px" class="text-center border border-light p-5" action="pregunta1.jsp" method="POST">
             <p class="h4 mb-4">ESCRIBIR 30 VECES</p>
             <input type="text" id="defaultLoginFormEmail" class="form-control mb-4" name="name" placeholder="Nombre">
             <button class="btn btn-info btn-block my-4" type="submit">Enviar</button>
